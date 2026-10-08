@@ -15,7 +15,7 @@ public class PolyFromTheFog implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		PolymerResourcePackUtils.addModAssets("lunareclipse.watching");
+		PolymerResourcePackUtils.addModAssets(MOD_ID);
 		PolymerResourcePackUtils.markAsRequired();
 
 		LOGGER.warn("SUSPICIOUS ENTITY IS DETECTED ON THIS SERVER!");
