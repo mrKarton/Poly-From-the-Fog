@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:all_of",
+  "terms": [
+    {
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "light": {
+            "light": {
+              "min": 8,
+              "max": 15
+            }
+          }
+        }
+      },
+      "type": "minecraft:entity_properties"
+    }
+  ]
+}

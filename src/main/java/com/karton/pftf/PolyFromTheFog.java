@@ -1,5 +1,6 @@
 package com.karton.pftf;
 
+import eu.pb4.polymer.resourcepack.api.PolymerResourcePackUtils;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.resources.Identifier;
@@ -10,18 +11,16 @@ import org.slf4j.LoggerFactory;
 public class PolyFromTheFog implements ModInitializer {
 	public static final String MOD_ID = "poly-from-the-fog";
 
-	// This logger is used to write text to the console and the log file.
-	// It is considered best practice to use your mod id as the logger's name.
-	// That way, it's clear which mod wrote info, warnings, and errors.
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	@Override
 	public void onInitialize() {
-		// This code runs as soon as Minecraft is in a mod-load-ready state.
-		// However, some things (like resources) may still be uninitialized.
-		// Proceed with mild caution.
+		PolymerResourcePackUtils.addModAssets("lunareclipse.watching");
+		PolymerResourcePackUtils.markAsRequired();
 
-		LOGGER.info("Hello Fabric world!");
+		LOGGER.warn("SUSPICIOUS ENTITY IS DETECTED ON THIS SERVER!");
+		LOGGER.warn("FURTHER LAUNCH IS NOT RECOMMENDED");
+		LOGGER.warn("DO IT ON YOU RESPONSIBILITY");
 	}
 
 	public static Identifier id(String path) {

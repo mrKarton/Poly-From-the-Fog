@@ -3,25 +3,36 @@
 	"id": "poly-from-the-fog",
 	"version": "${version}",
 	"name": "Poly From The Fog",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Polymer port of From The Fog datapack",
 	"authors": [
-		"Me!"
+		{
+			"name": "Lunar Eclipse Studios (original project)",
+			"contact": {
+				"homepage": "https://lunareclipse.studio",
+				"sources": "https://github.com/LunarEclipseStudios/From-The-Fog"
+			}
+		}
+	],
+	"contributors": [
+		{
+			"name": "mrKarton (port and fork maintenance)",
+			"contact": {
+				"homepage": "https://github.com/mrKarton"
+			}
+		}
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/mrKarton/Poly-From-the-Fog/",
+		"sources": "https://github.com/mrKarton/Poly-From-the-Fog/"
 	},
-	"license": "CC0-1.0",
-	"icon": "assets/poly-from-the-fog/icon.png",
+	"license": "CC BY-NC-SA 4.0",
+	"icon": "assets/lunareclipse.watching/pack.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
 			"com.karton.pftf.PolyFromTheFog"
 		]
 	},
-	"mixins": [
-		"poly-from-the-fog.mixins.json"
-	],
 	"depends": {
 		"fabricloader": ">=0.19.5",
 		"minecraft": "~26.3",

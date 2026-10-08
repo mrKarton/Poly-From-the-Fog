@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:all_of",
+  "terms": [
+    {
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "can_see_sky": true
+        }
+      },
+      "type": "minecraft:entity_properties"
+    }
+  ]
+}

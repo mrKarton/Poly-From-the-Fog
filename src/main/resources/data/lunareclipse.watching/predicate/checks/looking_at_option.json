@@ -1,0 +1,16 @@
+{
+  "entity": "this",
+  "predicate": {
+    "minecraft:type_specific/player": {
+      "looking_at": {
+        "minecraft:entity_type": "minecraft:interaction",
+        "minecraft:entity_tags": {
+          "any_of": [
+            "watching.tip_activated"
+          ]
+        }
+      }
+    }
+  },
+  "type": "minecraft:entity_properties"
+}
